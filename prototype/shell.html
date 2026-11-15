@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AVEGA</title>
+<link rel="icon" href="data:image/png;base64,%%FAV%%">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+/* theme boot: saved choice (localStorage, guarded) -> else light. Runs before paint. */
+(function () {
+  var t = null;
+  try { t = localStorage.getItem('avega-theme'); } catch (e) {}
+  if (t !== 'light' && t !== 'dark') t = 'light';   // default: light
+  document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+<style>
+%%CSS%%
+</style>
+</head>
+<body>
+<div class="bg-waves" aria-hidden="true"><svg viewBox="0 0 1400 170" preserveAspectRatio="none"><path d="M0 0H1400V60C1150 130 900 40 650 90S200 150 0 90Z" fill="var(--bg-wave1)" opacity=".6"/><path d="M0 0H1400V30C1100 100 850 10 600 60S150 110 0 50Z" fill="var(--bg-wave2)" opacity=".7"/></svg></div>
+<div class="app">
+  <aside class="sidebar">
+    <a class="brand" href="#dashboard" aria-label="AVEGA">
+      <span style="display:flex;align-items:center;gap:12px">
+        <img src="data:image/png;base64,%%LOGO%%" alt="" width="46" height="46" style="width:46px;height:46px;filter:drop-shadow(0 2px 5px rgba(26,140,240,.28))">
+        <span style="font-size:27px;font-weight:700;letter-spacing:.5px;color:var(--text)">AVEGA</span>
+      </span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Разделы"></nav>
+    <div class="sb-status">
+      <div class="row"><span class="dot"></span><span>Демо-режим</span></div>
+      <div class="row muted"><span id="side-day"></span></div>
+    </div>
+  </aside>
+  <div class="content">
+    <header class="topbar">
+      <div><h1 id="page-title"></h1><p class="sub" id="page-sub"></p></div>
+      <div class="top-right">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Сменить тему">
+          <span class="i-moon">%%MOON%%</span><span class="i-sun">%%SUN%%</span>
+        </button>
+        <div class="acct" id="acct"></div>
+      </div>
+    </header>
+    <div class="viewbar" id="viewbar" hidden></div>
+    <main id="view"></main>
+  </div>
+</div>
+<div class="demobar" role="note">
+  <span class="pillb"><i></i>Demo data</span>
+  <span>Все показатели — учебные: наборы синтетические, реальных измерений астронавтов нет.</span>
+  <span class="lg"><span class="badge b-demo">демо</span> заготовленные значения <span class="badge b-sim">смоделировано</span> имитация датчика <span class="badge b-real">реальные</span> пока не подключены <span class="badge b-soon">скоро</span> блок-заглушка</span>
+</div>
+<script id="avega-crew" type="application/json">%%CREW%%</script>
+%%DATA%%
+<script>
+%%JS%%
+</script>
+</body>
+</html>
