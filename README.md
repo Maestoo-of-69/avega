@@ -239,7 +239,9 @@ LICENSE        MIT
 
 ## Team · AI disclosure · License
 
-AVEGA team · NASA Space Apps Challenge 2026
+AVEGA team (Kuka's Crew) · NASA Space Apps Challenge 2026
+
+Team: [Maestoo-of-69](https://github.com/Maestoo-of-69) · [Vnvllcw](https://github.com/Vnvllcw)
 
 AI assistants were used to help write code and documentation under the team's direction; the app itself contains no AI model.
 
@@ -488,7 +490,9 @@ LICENSE        MIT
 
 ## Команда · Использование ИИ · Лицензия
 
-Команда AVEGA · NASA Space Apps Challenge 2026
+Команда AVEGA (Kuka's Crew) · NASA Space Apps Challenge 2026
+
+Команда: [Maestoo-of-69](https://github.com/Maestoo-of-69) · [Vnvllcw](https://github.com/Vnvllcw)
 
 ИИ-ассистенты использовались для помощи в написании кода и документации под руководством команды; само приложение не содержит модели ИИ.
 
