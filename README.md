@@ -241,7 +241,7 @@ LICENSE        MIT
 
 AVEGA team (Kuka's Crew) · NASA Space Apps Challenge 2026
 
-Team: [Maestoo-of-69](https://github.com/Maestoo-of-69) · [Vnvllcw](https://github.com/Vnvllcw)
+Team: [Maestoo-of-69](https://github.com/Maestoo-of-69) · [Vnvllcw](https://github.com/Vnvllcw) 
 
 AI assistants were used to help write code and documentation under the team's direction; the app itself contains no AI model.
 
