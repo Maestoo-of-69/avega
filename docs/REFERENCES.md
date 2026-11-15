@@ -356,6 +356,12 @@ Earth-surface background; AVEGA uses RAD-based simulated values instead. Every n
 ## 7. Not yet used (candidates — do not cite as used)
 - NASA Open Science Data Repository (OSDR) and other NASA open data: not connected, no data from them is in AVEGA.
 
+## 8. Sources used by the AVEGA Assistant (offline chat, `prototype/chat.js`, `prototype/engine.js`)
+The assistant is a rule-based interview and handbook, not a language model. It answers without the doctor (Earth–Mars delay up to 22 min one way, C1, C2) and never gives a diagnosis or medication advice.
+- Handbook entries and their sources: space motion sickness — R8, S2, S3; back pain — S1; headache and CO₂ — S4; SANS — R9; immunity and virus reactivation — R10, S5, S6; sleep — R6, P1, P2; psychological state — R3, N6; heart and landing — R5; bones and muscles — R4, R7; radiation — R2; decompression sickness — R11; hypoxia — R12; nutrition — R13; infections — R14; spacewalk injuries — R15; crew relationships — R16; landing loads — R17.
+- Recommendations: sleep — P2, R6; stress and mood — P4, R3; energy — P1, R7; cognition — P3; heart-rate rechecks have no source and are labelled «без источника».
+- Urgency levels and red flags restate each entry's "tell the doctor if" text; rules are in docs/CHAT_SPEC_V2.md and docs/CHAT_SPEC_V3.md (demonstration thresholds, not clinical triage).
+
 ## How to add a reference
 1. Add an entry: URL, what it says (paraphrase, < 15 words quoted), what it does **not** say, "Used for".
 2. Link it from the UI/doc where it matters. 3. Never state a medical value without a source in this file.

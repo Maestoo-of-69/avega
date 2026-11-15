@@ -77,7 +77,46 @@ flowchart LR
 - **Rebuild** after changing `prototype/` or `data/`: `python3 prototype/build_shell.py`
 - **Tests:** `pip install playwright`, then `bash tests/run_all.sh`
 
+## AVEGA Assistant — help when the doctor is far away
+
+On a Mars mission a question to the flight surgeon takes up to 22 minutes each way (C1, C2). The AVEGA Assistant works **offline, on board**, so a crew member gets structured help immediately, before the doctor's answer arrives.
+
+**What it does**
+- **Interview.** Asks one plain question at a time (what bothers you, how strong, since when, warning signs) and checks the answers against the person's own data — e.g. «you said "today", but stress has been above your usual level for 6 days».
+- **Weekly review.** Shows which indicators are outside the personal norm and since which day, and how they are linked in this person's data, with effect sizes.
+- **Recommendations.** Gives safe first steps (sleep routine, light, slow breathing, journaling, contact with family) — each with its source ID, or marked "no source".
+- **Urgency level.** Sorts the situation into «watch», «tell the doctor» or «urgent» by simple rules taken from the handbook; red-flag words (chest pain, fainting, vision changes, confusion, breathing difficulty, self-harm thoughts) always lead to «urgent».
+- **Summary for the doctor.** Prepares a short plain-text summary that can be sent to Earth in one tap.
+
+**What it does not do:** no diagnosis, no medication or doses, no language model — every answer is built from rules, the person's statistics and the handbook below.
+
+**Handbook: 17 space-health topics and their sources**
+
+| Topic | Sources |
+|---|---|
+| Space motion sickness | R8, S2, S3 |
+| Back pain during adaptation | S1 |
+| Headache and cabin CO₂ | S4 |
+| Neuro-ocular syndrome (SANS) | R9 |
+| Immunity and virus reactivation | R10, S5, S6 |
+| Sleep loss and schedule shifts | R6, P1, P2 |
+| Psychological state | R3, N6 |
+| Heart, vessels and landing | R5 |
+| Bones and muscles | R4, R7 |
+| Radiation | R2 |
+| Decompression sickness | R11 |
+| Mild hypoxia | R12 |
+| Nutrition | R13 |
+| Infections and microorganisms | R14 |
+| Spacewalk injuries | R15 |
+| Crew relationships | R16 |
+| Landing and g-loads | R17 |
+
+Recommendation sources: sleep — P2, R6; stress and mood — P4, R3; energy — P1, R7; cognition — P3. Method: [docs/CHAT_SPEC_V3.md](docs/CHAT_SPEC_V3.md).
+
 ## Scientific basis
+
+> Key NASA sources for what can be measured on astronauts and how: **N7** Spaceflight Standard Measures (npj Microgravity 2025), **N8** Astroskin wearable biosensor monitor, **N9** NASA Human Research Program, **R1** HRP risk list.
 
 Every outside fact in AVEGA is recorded with its source; the full list with what each source says and does not say is in [docs/REFERENCES.md](docs/REFERENCES.md).
 
@@ -287,7 +326,46 @@ flowchart LR
 - **Пересборка** после изменений в `prototype/` или `data/`: `python3 prototype/build_shell.py`
 - **Тесты:** `pip install playwright`, затем `bash tests/run_all.sh`
 
+## Ассистент AVEGA — помощь, когда врач далеко
+
+В миссии на Марс вопрос врачу идёт до 22 минут в одну сторону (C1, C2). Ассистент AVEGA работает **офлайн, на борту**, поэтому член экипажа получает понятную помощь сразу, ещё до ответа врача.
+
+**Что он умеет**
+- **Опрос.** Задаёт по одному простому вопросу (что беспокоит, насколько сильно, с какого времени, тревожные признаки) и сверяет ответы с личными данными человека — например: «вы ответили „сегодня“, а по данным стресс хуже обычного уже 6 дней».
+- **Обзор недели.** Показывает, какие показатели вышли за личную норму и с какого дня, и как они связаны именно у этого человека, с величиной эффекта.
+- **Рекомендации.** Предлагает безопасные первые шаги (режим сна, свет, медленное дыхание, дневник, связь с близкими) — у каждого указан источник или пометка «без источника».
+- **Уровень срочности.** По простым правилам из справочника относит ситуацию к «наблюдать», «сообщить врачу» или «срочно»; тревожные слова (боль в груди, обморок, нарушение зрения, спутанность, затруднённое дыхание, мысли о самоповреждении) всегда ведут к «срочно».
+- **Сводка для врача.** Готовит короткую текстовую сводку, которую можно отправить на Землю одной кнопкой.
+
+**Чего он не делает:** не ставит диагнозов, не советует лекарства и дозы, не использует языковую модель — каждый ответ строится из правил, личной статистики и справочника ниже.
+
+**Справочник: 17 тем о здоровье в космосе и их источники**
+
+| Тема | Источники |
+|---|---|
+| Космическая болезнь движения | R8, S2, S3 |
+| Боль в спине при адаптации | S1 |
+| Головная боль и CO₂ в кабине | S4 |
+| Нейроокулярный синдром (SANS) | R9 |
+| Иммунитет и реактивация вирусов | R10, S5, S6 |
+| Недосып и сбой режима | R6, P1, P2 |
+| Психологическое состояние | R3, N6 |
+| Сердце, сосуды и посадка | R5 |
+| Кости и мышцы | R4, R7 |
+| Радиация | R2 |
+| Декомпрессионная болезнь | R11 |
+| Лёгкая гипоксия | R12 |
+| Питание | R13 |
+| Инфекции и микроорганизмы | R14 |
+| Травмы при выходе в открытый космос | R15 |
+| Отношения в экипаже | R16 |
+| Посадка и перегрузки | R17 |
+
+Источники рекомендаций: сон — P2, R6; стресс и настроение — P4, R3; энергия — P1, R7; когнитивные функции — P3. Метод: [docs/CHAT_SPEC_V3.md](docs/CHAT_SPEC_V3.md).
+
 ## Научная основа
+
+> Ключевые источники NASA о том, что и как измеряют у астронавтов: **N7** Spaceflight Standard Measures (npj Microgravity 2025), **N8** носимый монитор Astroskin, **N9** NASA Human Research Program, **R1** список рисков HRP.
 
 Каждый внешний факт в AVEGA записан вместе с источником; полный список с тем, что источник говорит и чего не говорит, находится в [docs/REFERENCES.md](docs/REFERENCES.md).
 
