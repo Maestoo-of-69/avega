@@ -273,8 +273,10 @@ Used for (R11–R17): seven additional handbook entries and the chat interview (
 - Says: NASA collects a standard set of measures from astronauts; used as the general basis for the Actigraphy / Sleep Log item.
 - Does **not** say: any measurement schedule for the instruments in AVEGA's catalogue. **Periodicity labels on the page are AVEGA demo values.**
 
-### R20. NASA NTRS 20210023420 — BARS for teamwork assessment (applicant selection context)
-- Basis for naming "Team Performance BARS" (Behaviourally Anchored Rating Scale). AVEGA does **not** implement it yet (status «Скоро»).
+### R20. NASA NTRS 20210023420 — Evidence-based process for assessing teamwork competencies in applicant performance (verified: record opened)
+- URL: https://ntrs.nasa.gov/citations/20210023420
+- Says: how teamwork, leadership and followership competencies are defined and measured for high-risk operational jobs (applicant selection). The record page does **not** mention behaviourally anchored rating scales by name.
+- Used as context for the planned "Team Performance BARS" (Behaviourally Anchored Rating Scale). AVEGA does **not** implement it yet (status «Скоро»).
 - Does **not** say: use as a continuous in-flight team monitor.
 
 ### R21. PubMed 31156490 — Team Functioning Assessment (**NOT VERIFIED**: page could not be opened, reCAPTCHA)
