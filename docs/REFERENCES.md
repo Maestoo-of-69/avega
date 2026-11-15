@@ -288,7 +288,7 @@ Used for (R11–R17): seven additional handbook entries and the chat interview (
 
 ### Naming notes for the instrument catalogue
 - "Spaceflight Behavioral Health" was **not found** as a documented NASA instrument name; in AVEGA it is the team's label for the daily mood/stress/energy check-in (demo data, not an original NASA questionnaire).
-- "Narrative Assessment" and "Crew Connection" are AVEGA's own experimental methods (tag «Авторская методика»), not built yet.
+- «Креативное задание» (formerly "Narrative Assessment") and "Crew Connection" are AVEGA's own experimental methods (tag «Авторская методика»); both work in the prototype (see 6c).
 
 ## 6b. Radiation exposure monitoring (page «Радиация», `prototype/radiation.js`)
 
