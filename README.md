@@ -123,6 +123,9 @@ Every outside fact in AVEGA is recorded with its source; the full list with what
 - **N4** — [NASA NTRS 20170005421, BHP Laboratory Standard Measures](https://ntrs.nasa.gov/citations/20170005421) — used for planned parameters: pre-flight personality, sleep log
 - **N5** — [NASA NTRS 20220013722, Isolation Standard Measures](https://ntrs.nasa.gov/citations/20220013722) — used for domain list in docs/PARAMETERS.md
 - **N6** — [NASA NTRS 20260002661, behavioural health and team metrics in isolation](https://ntrs.nasa.gov/citations/20260002661) — used for why each person is compared with their own norm
+- **N7** — [Spaceflight Standard Measures, npj Microgravity 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12612093/) — used for parameter families and how often each is measured
+- **N8** — [Astroskin wearable biosensor monitor, NTRS 20190000238](https://ntrs.nasa.gov/citations/20190000238) — used for which wearable streams a real AVEGA could read
+- **N9** — [NASA Human Research Program](https://www.nasa.gov/hrp/) — used for programme context of the HRP risks
 - **J1** — [JAXA confined-facility study, Sci Rep 2018 (PMC5974367)](https://pmc.ncbi.nlm.nih.gov/articles/PMC5974367) — used for planned parameter: cortisol rhythm (no such data yet)
 - **J2** — [JAXA isolation test for long ISS stays](https://iss.jaxa.jp/iss/kibo/develop_status_12_e.html) — used for support functions: contact with family and doctor
 - **K1** — [Canadian Space Agency health experiments, Expedition 58](https://www.asc-csa.gc.ca/eng/missions/expedition58/about-the-mission/health-science-experiments.asp) — used for sensors a real AVEGA could read: wearable vitals, dosimetry
@@ -330,6 +333,9 @@ flowchart LR
 - **N4** — [NASA NTRS 20170005421, BHP Laboratory Standard Measures](https://ntrs.nasa.gov/citations/20170005421) — применение: планируемые параметры: личность до полёта, дневник сна
 - **N5** — [NASA NTRS 20220013722, Isolation Standard Measures](https://ntrs.nasa.gov/citations/20220013722) — применение: список доменов в docs/PARAMETERS.md
 - **N6** — [NASA NTRS 20260002661, behavioural health and team metrics in isolation](https://ntrs.nasa.gov/citations/20260002661) — применение: почему каждый человек сравнивается с собственной нормой
+- **N7** — [Spaceflight Standard Measures, npj Microgravity 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12612093/) — применение: семейства параметров и периодичность их измерения
+- **N8** — [Astroskin wearable biosensor monitor, NTRS 20190000238](https://ntrs.nasa.gov/citations/20190000238) — применение: какие потоки носимого датчика могла бы читать реальная AVEGA
+- **N9** — [NASA Human Research Program](https://www.nasa.gov/hrp/) — применение: общий контекст рисков HRP
 - **J1** — [JAXA confined-facility study, Sci Rep 2018 (PMC5974367)](https://pmc.ncbi.nlm.nih.gov/articles/PMC5974367) — применение: планируемый параметр: ритм кортизола (данных пока нет)
 - **J2** — [JAXA isolation test for long ISS stays](https://iss.jaxa.jp/iss/kibo/develop_status_12_e.html) — применение: функции поддержки: связь с семьёй и врачом
 - **K1** — [Canadian Space Agency health experiments, Expedition 58](https://www.asc-csa.gc.ca/eng/missions/expedition58/about-the-mission/health-science-experiments.asp) — применение: датчики, которые мог бы читать реальный AVEGA: носимые, дозиметрия

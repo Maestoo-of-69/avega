@@ -115,6 +115,21 @@ Legend — **Used for:** where in AVEGA the information influenced the product.
 - Says: positive affect tended to decrease over time; negative affect and stress varied strongly between individuals and tracked situational stressors more than time in isolation.
 - Used for: why AVEGA compares each person with their own norm rather than a group curve.
 
+### N7. Hardy, Theriot, Oswald, Clément — npj Microgravity 2025, 11:78 — Spaceflight Standard Measures (PMC12612093; verified: page opened)
+- URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC12612093/
+- Says: a multidisciplinary study that monitors astronaut health and performance at fixed points (pre-, in-, post-flight). Behavioural health: 120-item personality questionnaire pre-flight, 10-test Cognition battery, wrist actigraphy (sleep onset/wake, awakenings, sleep efficiency, light exposure), sleep logs, end-of-day team surveys. Also blood biochemistry (> 50 analytes), 24-h urine, immunology/virology (saliva PCR for EBV, HSV-1, VZV), microbiome, sensorimotor tests, mid-thigh-pull strength; shared medical data include DXA, ocular exams, Holter ECG, VO2max and radiation dosimetry.
+- Used for: confirms AVEGA's parameter families and that many measures are periodic (lab samples, scans), not continuous streams.
+
+### N8. DeLeon, Cowings, Toscano (UHCL / NASA Ames) — Wearable Biosensor Monitor to Support Autonomous Crew Health and Performance, 2016 (NTRS 20190000238; verified: record opened)
+- URL: https://ntrs.nasa.gov/citations/20190000238
+- Says: Astroskin — prototype wearable medical monitor (smart upper-body garment + sensor headband) measuring ECG, respiration, blood pressure, sleep quality and activity; tested on astronaut surrogates in 30-day HERA analog missions for data quality, usability and comfort.
+- Used for: which wearable streams a real AVEGA could read (vitals, sleep, activity); AVEGA's heart-rate stream remains simulated.
+
+### N9. NASA Human Research Program — landing page (verified: page opened)
+- URL: https://www.nasa.gov/hrp/
+- Says: HRP researches how to protect astronaut health and performance on Moon and Mars missions; work areas include human factors, health countermeasures, space radiation and research operations; links to ongoing in-space research. Does **not** list projects by status (completed / active / paused).
+- Used for: programme context for R1–R17.
+
 ### J1. JAXA confined-facility study (JAXA-CFE) — Scientific Reports 2018, PMC5974367
 - URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC5974367
 - Says: salivary cortisol profiles and skin physiological parameters showed a transition of psychological stress in confinement; IL-1β in stratum corneum and facial-expression symmetry are *possible*
